@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>restaurant</title>
+    
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="css/myproject.css">
+<script src="js/myproject.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/typeahead.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('input.typeahead').typeahead({
+		name: 'accounts',
+		local: ['Indian Cuisine ', 'Chinese Cuisine', 'Italian Cusine', 'Samosa', 'Shahi Paneer', 'Deserts', 'Appetizers', 'MainCourse', 'Starters', 'Dal Makhni', 'Gulabjamoon']
+	});
+	
+});  
+
+</script>
+
+
+</head>
+<body>
+<div class="container" id="con">
+
+    <div class="row" id="page1">
+	    <div class="col-lg-2">
+		    <a href="file:///C:/Users/Pooja/Desktop/pooja.mayekar_FinalProject/myproject.html">
+		    <img src="image/logo.jpg" id="img" alt="logojet" width="150px" height="100px">
+		    </a>
+		</div>
+        <div class="col-lg-6">
+            <div class="input-group">
+                
+                <input type="text" class="form-control typeahead tt-query" autocomplete="off" spellcheck="false"" placeholder="Search" id="text">
+            </div>
+        </div>
+	    <div class="col-md-offset-10" id="mine">
+		    <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">SIGN IN</button>
+        <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+				    <div class="col-md-6 col-md-offset-3">
+				<div class="panel panel-login">
+					<div class="panel-heading">
+						<div class="row">
+							<div class="col-xs-6">
+								<a href="#" class="active" id="login-form-link">Login</a>
+							</div>
+							<div class="col-xs-6">
+								<a href="#" id="register-form-link">Register</a>
+							</div>
+						</div>
+						<hr>
+					</div>
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-lg-12">
+								<form id="login-form" method="post" role="form" style="display: block;">
+									<div class="form-group">
+										<input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="" required>
+									</div>
+									<div class="form-group">
+										<input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password" required>
+									</div>
+									<div class="form-group text-center">
+										<input type="checkbox" tabindex="3" class="" name="remember" id="remember">
+										<label for="remember"> Remember Me</label>
+									</div>
+									<div class="form-group">
+										<div class="row">
+											<div class="col-sm-6 col-sm-offset-3">
+												<input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-login" value="Log In">
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="row">
+											<div class="col-lg-12">
+												<div class="text-center">
+													<a class="forgot-password">Forgot Password?</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</form>
+								
+								<form action="" method="post" id="register-form" novalidate="novalidate" role="form" style="display: none;>
+                                    <div id="form-content">
+                                        <fieldset>
+ 
+                                            <div class="fieldgroup">
+                                                <label for="firstname">First Name</label>
+                                                <input type="text" name="firstname"/>
+                                            </div>
+ 
+                                            <div class="fieldgroup">
+                                                <label for="lastname">Last Name</label>
+                                                <input type="text" name="lastname"/>
+                                            </div>
+ 
+                                            <div class="fieldgroup">
+                                                <label for="email">Email</label>
+                                                <input type="text" name="email" id="email1"/>
+                                            </div>
+ 
+                                            <div class="fieldgroup">
+                                                <label for="password">Password</label>
+                                                <input type="password" name="password" id="pass1"/>
+                                            </div>
+ 
+                                            <div class="fieldgroup">
+                                                <p class="right">By clicking register you agree to our <a target="_blank" href="/policy">policy</a>.</p>
+                                                <input type="submit" value="Register" class="submit"/>
+                                            </div>
+ 
+                                        </fieldset>
+                                    </div>
+
+   								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+	
+	    <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">SUBSCRIBE</button>
+            <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+				        <div class="span12" id="panel1">
+    		                <div class="thumbnail center well well-small text-center">
+                                    <h2>Newsletter</h2>
+                                    <p>Subscribe to our weekly Newsletter and stay tuned.</p>
+                                <form action="" method="post">
+                                    <div class="input-prepend"><span class="add-on"><i class="icon-envelope"></i></span>
+                                        <input type="text" id="" name="" placeholder="your@email.com" required>
+                                    </div>
+                                    <br />
+                                    <input type="submit" value="Subscribe Now!" class="btn btn-large" />
+                                </form>
+                            </div>    
+                        </div>
+				    </div>
+				</div> 
+            </div>				
+	    </div>
+		<button onclick="this.innerHTML=Date()" id="time">TIMESTAMP</button>
+	</div>
+</div>
+    <div class="container">
+		<div class="selector">
+		   <section id="grid" class="grid clearfix">
+				<a href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+					<figure>
+						<img src="image/cover1.jpg"  />
+						<div class="trans">
+						<figcaption>
+							<h2>INDIAN CUISINE</h2>
+							<p>TRADITIONAL INDIAN FOOD</p>
+							<button onclick="location.href='indian.html'" id="vie1">View</button>
+							
+						</figcaption>
+						</div>
+					</figure>
+				</a> 
+				<a href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+					<figure>
+						<img src="image/cover4.jpg" />
+						<figcaption>
+							<h2>CHINESE CUISINE</h2>
+							<p>WELCOME TO THE TASTE OF CHINA</p>
+							<button onclick="location.href='chinese.html'" id="vie1">View</button>
+						</figcaption>
+					</figure>
+				</a> 
+				<a href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+					<figure>
+						<img src="image/cover7.jpg" />
+						<figcaption>
+							<h2>ITALIAN CUISINE</h2>
+							<p>WE SERVE WITH BEST QUALITY</p>
+							<button onclick="location.href='Italian.html'" id="vie1">View</button>
+						</figcaption>
+					</figure>
+				</a> 
+				<a href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+					<figure>
+						<img src="image/cover8.jpg" />
+						<figcaption>
+							<h2>OTHER OPTIONS</h2>
+							<p>CHECK OUT LATWAY SPECIAL</p>
+							<button onclick="location.href='home.html'" id="vie1">View</button>
+						</figcaption>
+					</figure>
+				</a> 
+		</div>
+    </div>
+	<div class="jumbotron">
+	<div class="container">
+    <div class="row" id="footer">
+        <div class="col-sm-3">	
+		    <h3> ORDERS </h3>
+			<p>Phone 1.900.000.0000</p>
+			<p>Email info@Latway.com</p>
+		</div>
+		<div class="col-sm-2">	
+		    <h3> FOLLOW US </h3>
+			<a href="https://www.facebook.com/login/">
+			    <img src="image/fb.PNG" class="img-response4" alt="logo1" width="20px" height="20px">
+			</a>
+			<a href="https://twitter.com/login">
+			    <img src="image/tw.PNG" class="img-response5" alt="logo2" width="20px" height="20px">
+			</a>
+			<a href="https://instagram.com/accounts/login/">
+			    <img src="image/in.PNG" class="img-response6" alt="logo3" width="20px" height="20px">
+		    </a>
+		</div>
+		<div class="col-sm-2">	
+		    <h3> ADDRESS </h3>
+			<span><p>500 Terry Francois St.
+                     San Francisco, CA 94158</p></span>
+		</div>
+		<div class="col-sm-3">	
+		    <h3> HOURS </h3>
+			<span><p>Mon – Thur  6AM - 7PM
+                     Friday  6AM - 9PM
+                     Saturday  7AM - 9PM
+                     Sunday  7AM - 7PM</p></span>
+		</div>
+		<div class="col-sm-2"><br/>
+		    <h6> <span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span> by Latway Catering</h6>
+		</div>
+	</div>
+</div>
+</div>
+
+<script>
+$(function(){
+	$('a').mouseenter(function(){
+		$('path,viewbox'.this).attr("fill",'#ccc');
+	}).mouseleave(function(){
+		$('path,viewbox'.this).attr("fill",'#ccc');
+	});
+});
+ 
+</script>
+
+
+</body>
+</html>

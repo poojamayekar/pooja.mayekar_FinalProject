@@ -1,0 +1,361 @@
+#time{
+float: right;
+margin-right: 10px;
+color: white;
+background-color: #477DCC;
+}
+
+.img-thumbnail{
+border-color: #FDD55D;
+width: 250px;
+}
+
+#text{
+width: 175px;
+}
+
+#text, #search{
+height: 28px;
+}
+
+#img, #mine{
+margin-top: 10px;
+margin-bottom: 10px;
+color:
+}
+
+#page1{
+/* background-color:#FDD55D; */
+margin-top: 20px;
+  background:black;
+ 
+}
+
+#con{
+padding-bottom: 60px;
+}
+
+.input-group{
+margin-left: 300px;
+}
+
+/* Cuisine Menu */
+
+
+body{
+background-color:#520418;
+font-family: times, serif;
+} 
+
+
+.grid {
+	margin: 40px auto 120px;
+	max-width: 1000px;
+	width: 90%;
+	
+}
+
+.grid a {
+	float: left;
+	max-width: 250px;
+	width: 25%;
+	color: #F06C67;
+}
+
+.grid a:nth-child(odd) {
+	margin: 30px 0 -30px 0;
+}
+
+.grid figure {
+	position: relative;
+	overflow: hidden;
+	margin: 5px;
+	background: #B2B2B2;
+	box-shadow: 0 0 10px ;
+}
+
+.grid figure img {
+	position: relative;
+	display: block;
+	width: 100%;
+	opacity: 0.7;
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+	
+}
+
+figcaption {
+	position: absolute;
+	top: 0;
+	z-index: 11;
+	padding: 10px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	box-shadow: 0 0 10px red;
+}
+
+
+.grid figcaption h2 {
+	margin: 0 0 20px 0;
+	color: #F06C67;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 300;
+	font-size: 130%;
+
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+}
+
+.grid figcaption p {
+	padding: 0 20px;
+	color: black;
+	font-size: 20px;
+	font-weight: 300;
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+}
+
+.grid figcaption h2,
+.grid figcaption p {
+	-webkit-transform: translateY(50px);
+	transform: translateY(50px);
+}
+
+.grid figure button {
+	position: absolute;
+	padding: 4px 20px;
+	border: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: bold;
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+}
+
+.grid figcaption,
+.grid figcaption h2,
+.grid figcaption p{
+-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+
+.grid figure button {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid figcaption h2{
+    background: black;
+	 opacity:0.70;
+border-radius:0.5em 0.5em 0.5em 0.5em;
+box-shadow:0 0 10px #520418;
+	font-size: 50px;
+}
+
+
+/* Hover effects */
+.grid a:hover figure img {
+	opacity: 1;
+}
+
+.grid a:hover figcaption h2,
+.grid a:hover figcaption p {
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+}
+
+.grid a:hover figcaption p {
+	opacity: 0;
+}
+
+a, button {
+	outline: none;
+}
+
+a {
+	color: #f0f0f0;
+	text-decoration: none;
+}
+
+figcaption,figure,hgroup{display:block;}
+
+a:focus{outline:thin dotted;}
+a:active,
+a:hover{outline:0;}
+img{border:0;}
+svg:not(:root){overflow:hidden;}
+figure{margin:0;}
+fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em;}
+
+a:hover, a:focus {
+	color: #333;
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+ 
+.clearfix:after {
+	clear: both;
+}
+
+.grid figure button{
+top: 50%;
+	left: 50%;
+	border: 3px solid #000;
+	background: transparent;
+	color: #000;
+	opacity: 0;
+	-webkit-transform: translateY(-50%) translateX(-50%) scale(0.25);
+	transform: translateY(-50%) translateX(-50%) scale(0.25);
+}
+
+.grid a:hover figure button{
+opacity: 1;
+	-webkit-transform: translateY(-50%) translateX(-50%) scale(1);
+	transform: translateY(-50%) translateX(-50%) scale(1);
+}
+
+/* sign in */
+
+.panel-login {
+	border-color: #ccc;
+	-webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+	box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+}
+.panel-login>.panel-heading {
+	color: #00415d;
+	background-color: #fff;
+	border-color: #fff;
+	text-align:center;
+}
+.panel-login>.panel-heading a{
+	text-decoration: none;
+	color: #666;
+	font-weight: bold;
+	font-size: 15px;
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	transition: all 0.1s linear;
+}
+.panel-login>.panel-heading a.active{
+	color: #029f5b;
+	font-size: 18px;
+}
+.panel-login>.panel-heading hr{
+	margin-top: 10px;
+	margin-bottom: 0px;
+	clear: both;
+	border: 0;
+	height: 1px;
+	
+}
+.panel-login input[type="text"],.panel-login input[type="email"],.panel-login input[type="password"] {
+	height: 45px;
+	border: 1px solid #ddd;
+	font-size: 16px;
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	transition: all 0.1s linear;
+}
+.panel-login input:hover,
+.panel-login input:focus {
+	outline:none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	border-color: #ccc;
+}
+.btn-login {
+	background-color: #59B2E0;
+	outline: none;
+	color: #fff;
+	font-size: 14px;
+	height: auto;
+	font-weight: normal;
+	padding: 14px 0;
+	text-transform: uppercase;
+	border-color: #59B2E6;
+}
+.btn-login:hover,
+.btn-login:focus {
+	color: #fff;
+	background-color: #53A3CD;
+	border-color: #53A3CD;
+}
+.forgot-password {
+	text-decoration: underline;
+	color: #888;
+}
+.forgot-password:hover,
+.forgot-password:focus {
+	text-decoration: underline;
+	color: #666;
+}
+
+.btn-register:hover,
+.btn-register:focus {
+	color: #fff;
+	background-color: #1CA347;
+	border-color: #1CA347;
+}
+ 
+#register-form .fieldgroup {
+    
+    display: inline-block;
+    padding: 8px 10px;
+    width: 250px;
+}
+ 
+#register-form #email1 {
+margin-left: 55px;
+
+    }
+	
+#register-form #pass1 {
+margin-left: 25px;
+
+    }
+ 
+#register-form .fieldgroup input, #register-form .fieldgroup textarea, #register-form .fieldgroup select {
+    display: inline;
+	width: 130px;
+	height: 30px;
+	margin-left: 20px;
+	
+}
+ 
+#register-form .submit {
+    width: 200px;
+	font-size: 15px;
+	background-color: #95D0F7;
+}
+ 
+#register-form .fieldgroup label.error {
+    color: #FB3A3A;
+    display: inline-block;
+	margin-left: 60px;
+    text-align: left;
+    width: 220px;
+}
+
+.jumbotron
+{
+background-color:black;
+}
+
+/* footer */
+
+#footer {
+color: white;
+}
+
+#footer p{
+font-size: 15px;
+}

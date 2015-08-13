@@ -1,0 +1,50 @@
+body{
+background-image: url(http://www.ipages.am/files/companies/13045/template/bg/555.jpg);
+}
+
+.post-content {
+    background-color: #ffffff;
+    opacity: 1.0;
+	color: red;
+    margin: -47px 220px 10px;
+    position: relative;
+	width:75px;
+	font-size: 30px;
+}
+
+#footer {
+    margin-top: 50px;
+}
+
+
+
+/* appetizer */
+.panel-default{
+    text-align:center;
+    cursor:pointer;
+    font-family: 'Raleway',sans-serif;
+}
+.panel-default > .panel-footer {
+    color: #fff;
+    background-color: #47c8ed;    
+    display:none;
+    text-shadow: 1px 1px 1px rgba(150, 150, 150, 1);
+}
+.panel-default i{
+    font-size: 5em;
+    }
+	
+.jumbotron
+{
+background-color:black;
+}
+
+/* footer */
+
+#footer {
+color: white;
+}
+
+#footer p{
+font-size: 15px;
+}

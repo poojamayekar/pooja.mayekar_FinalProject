@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>restaurant</title>
+    
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+<script src="js/myproject.js"></script>
+
+<style>
+.span3{
+display: block;
+padding: 10px;
+}
+
+.btn btn-primary{
+float:left;
+
+}
+
+.f_row{
+display: block;
+padding: 10px;
+margin-left: -10px;
+}
+
+#state1{
+display: block;
+}
+
+#zipCode{
+display: block;
+}
+
+#city{
+display: block;
+}
+
+body{
+background-color: #FA663B;
+}
+
+#img{
+margin-left: 400px;
+margin-top: -600px;
+width: 400px;
+height: 400px;
+}
+</style>
+
+</head>
+<body>
+<div class="container">
+    <div class="row">
+	    <a class="menu-bar" id="flip" data-toggle="collapse" href="#menu">
+		    <span class="bars"><span>
+		</a>
+		<div class="col menu" id="my">
+		    <ul class="nav nav-tabs">
+		        <li><a href="myproject.html" target="view">Home</a></li>
+				<li><a href="about.html" target="view">About</a></li>
+				<li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Home <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="maps.html" target="view">Maps</a></li>
+								<li><a href="image.html" target="view">Image Gallery</a></li>
+								<li><a href="review.html" target="view">Review</a></li>
+					    </ul>
+				</li>
+				<li><a href="contact.html" target="view">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="container">
+<div class="span3">
+    <h2>TRACK NEAREST LOCATION</h2>
+    <form>
+    <label>First Name</label>
+    <input type="text" name="firstname" class="span3" required>
+    <label>Last Name</label>
+    <input type="text" name="lastname" class="span3" required>
+    <label>Email Address</label>
+    <input type="email" name="email" class="span3" required>
+    <label>Address</label>
+    <input type="text" name="username" class="span3" required>
+    <div class="f_row">
+	    <label for="zipCode">ZIP Code:</label>
+		<input type="text" class="text small" name="zipCode" id="zipCode" required />
+	</div>
+	<div class="f_row">
+		<label for="city">City:</label>
+		<input type="text" class="text medium" name="city" id="city" required />
+		<label for="state" id="state1">State:</label>
+			<select id="state" class="auto">
+				<option value="" selected="selected"></option>
+				<option value="AL">AL</option>
+				<option value="AK">AK</option>
+				<option value="AZ">AZ</option>
+				<option value="AR">AR</option>
+				<option value="CA">CA</option>
+				<option value="CO">CO</option>
+				<option value="CT">CT</option>
+				<option value="DE">DE</option>
+				<option value="DC">DC</option>
+				<option value="FL">FL</option>
+				<option value="GA">GA</option>
+				<option value="HI">HI</option>
+				<option value="ID">ID</option>
+				<option value="IL">IL</option>
+				<option value="IN">IN</option>
+				<option value="IA">IA</option>
+				<option value="KS">KS</option>
+				<option value="KY">KY</option>
+				<option value="LA">LA</option>
+				<option value="ME">ME</option>
+				<option value="MD">MD</option>
+				<option value="MA">MA</option>
+				<option value="MI">MI</option>
+				<option value="MN">MN</option>
+				<option value="MS">MS</option>
+				<option value="MO">MO</option>
+				<option value="MT">MT</option>
+				<option value="NE">NE</option>
+				<option value="NV">NV</option>
+				<option value="NH">NH</option>
+				<option value="NJ">NJ</option>
+				<option value="NM">NM</option>
+				<option value="NY">NY</option>
+				<option value="NC">NC</option>
+				<option value="ND">ND</option>
+				<option value="OH">OH</option>
+				<option value="OK">OK</option>
+				<option value="OR">OR</option>
+				<option value="PA">PA</option>
+				<option value="RI">RI</option>
+				<option value="SC">SC</option>
+				<option value="SD">SD</option>
+				<option value="TN">TN</option>
+				<option value="TX">TX</option>
+				<option value="UT">UT</option>
+				<option value="VT">VT</option>
+				<option value="VA">VA</option>
+				<option value="WA">WA</option>
+				<option value="WV">WV</option>
+				<option value="WI">WI</option>
+				<option value="WY">WY</option>
+			</select>
+			<label><input type="checkbox" name="terms"> I agree with the <a href="#">Terms and Conditions</a>.</label><br/>
+            <input type="submit" value="Check Result" class="btn btn-primary">
+	</div>
+</form>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<div class="row">
+<img src="image/Capture.jpg" class="img-thumbnail" id="img" alt="logojet" width="150px" height="100px">
+</div>
+</div>
+	
+<div class="jumbotron">
+<div class="container">
+    <div class="row" id="footer">
+        <div class="col-sm-3">	
+		    <h6> ORDERS </h6>
+			<p>Phone 1.900.000.0000</p>
+			<p>Email info@Latway.com</p>
+		</div>
+		<div class="col-sm-2">	
+		    <h6> FOLLOW US </h6>
+			<a href="https://www.facebook.com/login/">
+			    <img src="image/fb.PNG" class="img-response4" alt="logo1" width="20px" height="20px">
+			</a>
+			<a href="https://twitter.com/login">
+			    <img src="image/tw.PNG" class="img-response5" alt="logo2" width="20px" height="20px">
+			</a>
+			<a href="https://instagram.com/accounts/login/">
+			    <img src="image/in.PNG" class="img-response6" alt="logo3" width="20px" height="20px">
+		    </a>
+		</div>
+		<div class="col-sm-2">	
+		    <h6> ADDRESS </h6>
+			<span><p>500 Terry Francois St.
+                     San Francisco, CA 94158</p></span>
+		</div>
+		<div class="col-sm-3">	
+		    <h6> HOURS </h6>
+			<span><p>Mon – Thur  6AM - 7PM
+                     Friday  6AM - 9PM
+                     Saturday  7AM - 9PM
+                     Sunday  7AM - 7PM</p></span>
+		</div>
+		<div class="col-sm-2"><br/>
+		    <h6> <span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span> by Latway Catering</h6>
+		</div>
+	</div>
+</div>
+</div>
+
+<script>
+
+
+$(document).ready(function () {
+	$('#zipCode').keyup(function(e){
+		var zipCode = $(this).val();
+
+		
+		if (zipCode.length === 5 && $.isNumeric(zipCode)) {
+			var requestURL = 'http://ziptasticapi.com/' + zipCode +'?callback=?';
+			$.getJSON(requestURL, null, function(data){
+				console.log(data);
+				
+				if (data.city) $('#city').val(data.city);
+				if (data.state) $('#state').val(data.state);
+			});
+		}
+	});
+});
+</script>
+</div>
+</div>
+</body>
+</html>

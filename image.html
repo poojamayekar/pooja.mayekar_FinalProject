@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>restaurant</title>
+    
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  
+    
+
+<script type="text/javascript">
+var index=2;
+$(document).ready(function(){
+     
+    
+    $(window).scroll(function(){
+         
+		 var wintop = $(window).scrollTop(), docheight = $(document).height(), winheight = $(window).height();
+        var  scrolltrigger = 0.95;
+ 
+        if  ((wintop/(docheight-winheight)) > scrolltrigger) {
+         console.log('scroll bottom');
+		 var myclass='.image'+index;
+		 $(myclass).slideDown(1000);
+		 console.log(myclass);
+		 index++;
+        
+        }
+    });
+});
+</script>
+
+<style>
+.image2, .image3, .image4, .image5   {
+	display:none;
+}
+
+.item{
+font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+    <center><div class="item">IMAGE GALLERY</div></center>
+	<div class="image1">
+	
+	    <img src="image/chid.jpg" alt="img" class="img-thumbnail" id="rate" width="300px" height="400px"></img>
+		<img src="image/chimai1.jpg" alt="img" class="img-thumbnail" id="rate" width="300px" height="400px"></img>
+		<img src="image/chisart.jpg" alt="img" class="img-thumbnail" id="rate" width="300px" height="400px"></img>
+		<img src="image/ind2.jpg" alt="img" class="img-thumbnail" id="rate" width="300px" height="400px"></img>
+		<img src="image/inst1.jpg" alt="img" class="img-thumbnail" id="rate" width="300px" height="400px"></img>
+		<img src="image/itadest.jpg" alt="img" class="img-thumbnail" id="rate" width="300px" height="400px"></img>
+		<img src="image/chid5.jpg" alt="img" class="img-thumbnail" id="rate" width="300px" height="400px"></img>
+		<img src="image/chimai8.jpg" alt="img" class="img-thumbnail" id="rate" width="300px" height="400px"></img>
+		<img src="image/inst2.jpg" alt="img" class="img-thumbnail" id="rate" width="300px" height="400px"></img>
+		<img src="image/itastart3.jpg" alt="img" class="img-thumbnail" id="rate" width="300px" height="400px"></img>
+		<img src="image/chid2.jpg" alt="img" class="img-thumbnail" id="rate" width="300px" height="400px"></img>
+		<img src="image/chid3.jpg" alt="img" class="img-thumbnail" id="rate" width="300px" height="400px"></img>
+	</div>
+	
+	<div id="lastPostsLoader"></div>
+	
+	<div class="image2">
+	
+	    <img src="image/chid.jpg" alt="img" class="img-thumbnail" id="rate" width="300px" height="400px"></img>
+		<img src="image/chid4.jpg" alt="img" class="img-thumbnail" id="rate" width="300px" height="400px"></img>
+		<img src="image/chid5.jpg" alt="img" class="img-thumbnail" id="rate" width="300px" height="400px"></img>
+		<img src="image/chid6.jpg" alt="img" class="img-thumbnail" id="rate" width="300px" height="400px"></img>
+		
+		
+	</div>
+	<div class="image3">
+		
+		<img src="image/ind2.jpg" alt="img" class="img-thumbnail" id="rate" width="300px" height="400px"></img>
+		<img src="image/ind3.jpg" alt="img" class="img-thumbnail" id="rate" width="300px" height="400px"></img>
+		<img src="image/ind4.jpg" alt="img" class="img-thumbnail" id="rate" width="300px" height="400px"></img>
+		<img src="image/ind5.jpg" alt="img" class="img-thumbnail" id="rate" width="300px" height="400px"></img>
+		<img src="image/ind6.jpg" alt="img" class="img-thumbnail" id="rate" width="300px" height="400px"></img>
+		<img src="image/ind7.jpg" alt="img" class="img-thumbnail" id="rate" width="300px" height="400px"></img>
+		<img src="image/ind8.jpg" alt="img" class="img-thumbnail" id="rate" width="300px" height="400px"></img>
+		<img src="image/ind9.jpg" alt="img" class="img-thumbnail" id="rate" width="300px" height="400px"></img>
+		<img src="image/ind10.jpg" alt="img" class="img-thumbnail" id="rate" width="300px" height="400px"></img>
+		<img src="image/ind11.jpg" alt="img" class="img-thumbnail" id="rate" width="300px" height="400px"></img>
+		<img src="image/ind12.jpg" alt="img" class="img-thumbnail" id="rate" width="300px" height="400px"></img>
+		<img src="image/inst1.jpg" alt="img" class="img-thumbnail" id="rate" width="300px" height="400px"></img>
+	</div>
+	<div class="image4">
+		<img src="image/itadest.jpg" alt="img" class="img-thumbnail" id="rate" width="300px" height="400px"></img>
+		<img src="image/itadest2.jpg" alt="img" class="img-thumbnail" id="rate" width="300px" height="400px"></img>
+		<img src="image/itadest3.jpg" alt="img" class="img-thumbnail" id="rate" width="300px" height="400px"></img>
+		<img src="image/itadest4.jpg" alt="img" class="img-thumbnail" id="rate" width="300px" height="400px"></img>
+		<img src="image/itadest5.jpg" alt="img" class="img-thumbnail" id="rate" width="300px" height="400px"></img>
+		<img src="image/itadest6.jpg" alt="img" class="img-thumbnail" id="rate" width="300px" height="400px"></img>
+		<img src="image/inst1.jpg" alt="img" class="img-thumbnail" id="rate" width="300px" height="400px"></img>
+		<img src="image/inst2.jpg" alt="img" class="img-thumbnail" id="rate" width="300px" height="400px"></img>
+		<img src="image/inst3.jpg" alt="img" class="img-thumbnail" id="rate" width="300px" height="400px"></img>
+		<img src="image/inst4.jpg" alt="img" class="img-thumbnail" id="rate" width="300px" height="400px"></img>
+		<img src="image/inst5.jpg" alt="img" class="img-thumbnail" id="rate" width="300px" height="400px"></img>
+		<img src="image/inst6.jpg" alt="img" class="img-thumbnail" id="rate" width="300px" height="400px"></img>
+		
+	</div>
+	<div class="image5">
+		<img src="image/itastart1.jpg" alt="img" class="img-thumbnail" id="rate" width="300px" height="400px"></img>
+		<img src="image/itastart2.jpg" alt="img" class="img-thumbnail" id="rate" width="300px" height="400px"></img>
+		<img src="image/itastart3.jpg" alt="img" class="img-thumbnail" id="rate" width="300px" height="400px"></img>
+		<img src="image/itastart4.jpg" alt="img" class="img-thumbnail" id="rate" width="300px" height="400px"></img>
+		<img src="image/itastart5.jpg" alt="img" class="img-thumbnail" id="rate" width="300px" height="400px"></img>
+		<img src="image/itastart6.jpg" alt="img" class="img-thumbnail" id="rate" width="300px" height="400px"></img>
+		<img src="image/main1.jpg" alt="img" class="img-thumbnail" id="rate" width="300px" height="400px"></img>
+		<img src="image/main2.jpg" alt="img" class="img-thumbnail" id="rate" width="300px" height="400px"></img>
+		<img src="image/main3.jpg" alt="img" class="img-thumbnail" id="rate" width="300px" height="400px"></img>
+		<img src="image/main4.jpg" alt="img" class="img-thumbnail" id="rate" width="300px" height="400px"></img>
+		<img src="image/main5.jpg" alt="img" class="img-thumbnail" id="rate" width="300px" height="400px"></img>
+		<img src="image/main6.jpg" alt="img" class="img-thumbnail" id="rate" width="300px" height="400px"></img>
+	</div>
+	
+<div class="jumbotron">
+<div class="container">
+    <div class="row" id="footer">
+        <div class="col-sm-3">	
+		    <h6> ORDERS </h6>
+			<p>Phone 1.900.000.0000</p>
+			<p>Email info@Latway.com</p>
+		</div>
+		<div class="col-sm-2">	
+		    <h6> FOLLOW US </h6>
+			<a href="https://www.facebook.com/login/">
+			    <img src="image/fb.PNG" class="img-response4" alt="logo1" width="20px" height="20px">
+			</a>
+			<a href="https://twitter.com/login">
+			    <img src="image/tw.PNG" class="img-response5" alt="logo2" width="20px" height="20px">
+			</a>
+			<a href="https://instagram.com/accounts/login/">
+			    <img src="image/in.PNG" class="img-response6" alt="logo3" width="20px" height="20px">
+		    </a>
+		</div>
+		<div class="col-sm-2">	
+		    <h6> ADDRESS </h6>
+			<span><p>500 Terry Francois St.
+                     San Francisco, CA 94158</p></span>
+		</div>
+		<div class="col-sm-3">	
+		    <h6> HOURS </h6>
+			<span><p>Mon – Thur  6AM - 7PM
+                     Friday  6AM - 9PM
+                     Saturday  7AM - 9PM
+                     Sunday  7AM - 7PM</p></span>
+		</div>
+		<div class="col-sm-2"><br/>
+		    <h6> <span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span> by Latway Catering</h6>
+		</div>
+	</div>
+</div>
+</div>
+</body>
+</html>	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
